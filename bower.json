@@ -1,0 +1,7 @@
+{
+	"name": "ChatRTC",
+	"dependencies": {
+		"jquery": "latest",
+		"bootstrap": "latest"
+	}
+}

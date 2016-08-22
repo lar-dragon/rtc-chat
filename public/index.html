@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<base href="/">
+		<title>Chat</title>
+		<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css" type="text/css">
+		<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap-theme.min.css" type="text/css">
+		<link rel="stylesheet" href="style.css" type="text/css">
+	</head>
+	<body class="container-fluid">
+		<div class="row">
+			<section class="col-xs-12 col-sm-5 col-sm-push-3 col-md-7 col-md-push-2">
+				<header class="input-group">
+					<input class="form-control" type="text" id="name" placeholder="Enter your name">
+					<span class="input-group-btn">
+						<button class="btn btn-default" id="login" data-alt-title="Leave" title="Enter">
+							<span class="glyphicon glyphicon-ok" data-alt-class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+							<span class="sr-only">Enter</span>
+						</button>
+					</span>
+				</header>
+				<main>
+					<ul id="chat" class="list-group"></ul>
+				</main>
+				<footer class="input-group">
+					<input class="form-control disabled" type="text" id="message" disabled>
+					<span class="input-group-btn">
+						<button class="btn btn-default disabled" id="send" title="Send" disabled>
+							<span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+							<span class="sr-only">Send</span>
+						</button>
+					</span>
+				</footer>
+			</section>
+			<aside class="col-xs-12 col-sm-4 col-sm-push-3 col-md-3 col-md-push-2">
+				<p class="h5">Your files:</p>
+				<ul id="files" class="list-group"></ul>
+				<p class="text-center">
+					<label for="file" class="btn btn-default" title="Upload file">
+						<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+						<span class="sr-only">Upload file</span>
+					</label>
+					<input id="file" type="file" style="display: none;">
+				</p>
+			</aside>
+			<aside class="col-xs-12 col-sm-3 col-sm-pull-9 col-md-2 col-md-pull-10">
+				<p class="h5">Users online:</p>
+				<ul id="roster" class="list-group"></ul>
+			</aside>
+			<script src="libs/jquery/dist/jquery.min.js" type="application/javascript" defer></script>
+			<script src="socket.io/socket.io.js" type="application/javascript" defer></script>
+			<script src="libs/webrtc-adapter/release/adapter.js" type="application/javascript" defer></script>
+			<script src="script.js" type="application/javascript" defer></script>
+		</div>
+	</body>
+</html>

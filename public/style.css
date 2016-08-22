@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+#chat {
+	margin: 0;
+}
+
+body > .row > section > main {
+	height: 16em;
+	overflow-y: scroll;
+	border: solid 1px #ccc;
+	border-radius: 4px;
+}
+
+body {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+	
+	html,
+	body,
+	body > .row {
+		height: 100%;
+		overflow: hidden;
+	}
+	
+	body > .row > aside {
+		height: 100%;
+		overflow-y: auto;
+	}
+	
+	body > .row > section {
+		padding: 0;
+		height: 100%;
+	}
+	
+	body > .row > section > * {
+		position: absolute;
+	}
+	
+	body > .row > section > header {
+		top: 0;
+	}
+	
+	body > .row > section > footer {
+		bottom: 0;
+	}
+	
+	body > .row > section > main {
+		height: auto;
+		top: 34px;
+		left: 0;
+		right: 0;
+		bottom: 34px;
+	}
+    
+}
+
+.list-group-item {
+	word-wrap: break-word;
+}
+
+.list-group-item > .badge {
+	z-index: 2;
+	position: relative;
+}
+
