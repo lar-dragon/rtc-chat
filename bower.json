@@ -1,7 +1,8 @@
 {
-	"name": "ChatRTC",
+	"name": "rtc-chat",
 	"dependencies": {
 		"jquery": "latest",
-		"bootstrap": "latest"
+		"bootstrap": "latest",
+		"webrtc-adapter": "latest"
 	}
 }

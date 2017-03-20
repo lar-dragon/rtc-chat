@@ -1,5 +1,5 @@
 {
-	"name": "ChatRTC",
+	"name": "rtc-chat",
 	"version": "0.1.0",
 	"author": "Yaroslav <lar-dragon@yandex.ru>",
 	"description": "WebRTC text chat witch file transfer",
